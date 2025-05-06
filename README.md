@@ -1,4 +1,4 @@
-# Animated-version-of-Van-Gogh-s-Starry-Night
+# Animated-version-of-Van-Gogh-Starry-Night
 # Starry Night Animation Project
 
 This project creates an artistic animation of Van Gogh's "Starry Night" painting using advanced computer vision techniques. The animation combines multiple visual effects to produce a dynamic, visually appealing result in just 8 seconds.
