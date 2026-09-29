@@ -1,0 +1,272 @@
+{
+  "imageSize": [
+    1280,
+    1014
+  ],
+  "vortices": [
+    {
+      "x": 0.42,
+      "y": 0.25,
+      "r": 0.3,
+      "speed": 0.55,
+      "dir": 1.0
+    },
+    {
+      "x": 0.63,
+      "y": 0.19,
+      "r": 0.2,
+      "speed": 0.75,
+      "dir": -1.0
+    }
+  ],
+  "stars": [
+    {
+      "x": 0.352,
+      "y": 0.512,
+      "r": 0.06,
+      "kind": "star",
+      "note": "Venus, the morning star — the brightest in the painting",
+      "phase": 5.625,
+      "speed": 1.373,
+      "amp": 0.34
+    },
+    {
+      "x": 0.107,
+      "y": 0.05,
+      "r": 0.055,
+      "kind": "star",
+      "note": "Large star, upper-left corner",
+      "phase": 4.051,
+      "speed": 2.434,
+      "amp": 0.34
+    },
+    {
+      "x": 0.368,
+      "y": 0.049,
+      "r": 0.042,
+      "kind": "star",
+      "note": "Star at top center",
+      "phase": 4.4,
+      "speed": 2.273,
+      "amp": 0.34
+    },
+    {
+      "x": 0.228,
+      "y": 0.036,
+      "r": 0.03,
+      "kind": "star",
+      "note": "Second-brightest star, upper left",
+      "phase": 3.803,
+      "speed": 2.465,
+      "amp": 0.34
+    },
+    {
+      "x": 0.476,
+      "y": 0.016,
+      "r": 0.03,
+      "kind": "star",
+      "note": "Star on the top edge",
+      "phase": 1.659,
+      "speed": 2.667,
+      "amp": 0.34
+    },
+    {
+      "x": 0.614,
+      "y": 0.092,
+      "r": 0.05,
+      "kind": "star",
+      "note": "Round star to the moon's upper left",
+      "phase": 2.517,
+      "speed": 2.044,
+      "amp": 0.34
+    },
+    {
+      "x": 0.815,
+      "y": 0.278,
+      "r": 0.045,
+      "kind": "star",
+      "note": "Star below-left of the moon",
+      "phase": 1.15,
+      "speed": 1.777,
+      "amp": 0.34
+    },
+    {
+      "x": 0.131,
+      "y": 0.479,
+      "r": 0.048,
+      "kind": "star",
+      "note": "Bright star left of the cypress",
+      "phase": 4.796,
+      "speed": 1.862,
+      "amp": 0.34
+    },
+    {
+      "x": 0.046,
+      "y": 0.452,
+      "r": 0.035,
+      "kind": "star",
+      "note": "Star at the far left edge",
+      "phase": 4.55,
+      "speed": 1.11,
+      "amp": 0.34
+    },
+    {
+      "x": 0.237,
+      "y": 0.147,
+      "r": 0.035,
+      "kind": "star",
+      "note": "Star above-right of the cypress",
+      "phase": 5.03,
+      "speed": 1.142,
+      "amp": 0.34
+    },
+    {
+      "x": 0.694,
+      "y": 0.206,
+      "r": 0.04,
+      "kind": "star",
+      "note": "Star at the right whirlpool's center",
+      "phase": 1.384,
+      "speed": 2.284,
+      "amp": 0.34
+    },
+    {
+      "x": 0.323,
+      "y": 0.328,
+      "r": 0.035,
+      "kind": "swirl",
+      "note": "Bright core of the main whirlpool eye",
+      "phase": 5.898,
+      "speed": 2.417,
+      "amp": 0.16
+    },
+    {
+      "x": 0.473,
+      "y": 0.202,
+      "r": 0.045,
+      "kind": "swirl",
+      "note": "Bright arc between the twin whirlpools",
+      "phase": 0.252,
+      "speed": 1.906,
+      "amp": 0.16
+    }
+  ],
+  "moon": {
+    "x": 0.926,
+    "y": 0.137,
+    "r": 0.055,
+    "halo": 0.135,
+    "phase": 2.907,
+    "speed": 0.45
+  },
+  "windows": [
+    {
+      "x": 0.7357,
+      "y": 0.8258,
+      "r": 0.0193,
+      "area": 110,
+      "phase": 4.165,
+      "speed": 4.56
+    },
+    {
+      "x": 0.8186,
+      "y": 0.9122,
+      "r": 0.0248,
+      "area": 109,
+      "phase": 0.151,
+      "speed": 3.445
+    },
+    {
+      "x": 0.4865,
+      "y": 0.8615,
+      "r": 0.0177,
+      "area": 101,
+      "phase": 1.615,
+      "speed": 3.555
+    },
+    {
+      "x": 0.8898,
+      "y": 0.9226,
+      "r": 0.0193,
+      "area": 100,
+      "phase": 1.216,
+      "speed": 2.871
+    },
+    {
+      "x": 0.7913,
+      "y": 0.8706,
+      "r": 0.0198,
+      "area": 98,
+      "phase": 0.032,
+      "speed": 4.869
+    },
+    {
+      "x": 0.7677,
+      "y": 0.8763,
+      "r": 0.0198,
+      "area": 95,
+      "phase": 0.791,
+      "speed": 4.704
+    },
+    {
+      "x": 0.6884,
+      "y": 0.8571,
+      "r": 0.0228,
+      "area": 87,
+      "phase": 4.399,
+      "speed": 4.413
+    },
+    {
+      "x": 0.5869,
+      "y": 0.9245,
+      "r": 0.0208,
+      "area": 86,
+      "phase": 2.051,
+      "speed": 4.084
+    },
+    {
+      "x": 0.6077,
+      "y": 0.9248,
+      "r": 0.0198,
+      "area": 71,
+      "phase": 4.402,
+      "speed": 2.217
+    },
+    {
+      "x": 0.8906,
+      "y": 0.9133,
+      "r": 0.0177,
+      "area": 62,
+      "phase": 2.177,
+      "speed": 4.042
+    },
+    {
+      "x": 0.4857,
+      "y": 0.8526,
+      "r": 0.0169,
+      "area": 61,
+      "phase": 1.058,
+      "speed": 5.678
+    },
+    {
+      "x": 0.6825,
+      "y": 0.8527,
+      "r": 0.0149,
+      "area": 26,
+      "phase": 3.638,
+      "speed": 4.505
+    },
+    {
+      "x": 0.6027,
+      "y": 0.9291,
+      "r": 0.0109,
+      "area": 19,
+      "phase": 1.735,
+      "speed": 2.938
+    }
+  ],
+  "cypress": {
+    "top": 0.0394,
+    "bottom": 0.9004
+  }
+}
