@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Pipeline regenerable artifacts
+output/sam_masks.npy
+
+# Model weights (fetched by scripts/download_models.sh)
+checkpoints/*.pt
+checkpoints/*.pth
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

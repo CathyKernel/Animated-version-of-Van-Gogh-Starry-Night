@@ -1,0 +1,21 @@
+# Van Gogh neural rendering pipeline — Python dependencies (CPU build)
+#
+# The project specification lists segment-anything / zoedepth /
+# raft-stereo; this lightweight rebuild maps them to:
+#   segment-anything  -> segment-anything (pip, official)      [used as-is]
+#   zoedepth          -> MiDaS-small v2.1 (vendored code + .pt) [see checkpoints/]
+#   raft-stereo       -> torchvision.models.optical_flow.raft_small
+#
+# Install:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+
+torch>=2.0
+torchvision>=0.15
+opencv-contrib-python>=4.8      # contrib: jointBilateralFilter for depth fusion
+numpy>=1.24
+Pillow>=9.0
+segment-anything>=1.0
+einops>=0.6
+timm>=0.9
+scipy>=1.10

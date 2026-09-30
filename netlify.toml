@@ -1,0 +1,12 @@
+# Netlify configuration — the renderer is a fully static site.
+# Deploy: push this repository to GitHub and import it on Netlify,
+# or drag-and-drop the repository folder at https://app.netlify.com/drop.
+[build]
+  publish = "renderer/web"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
