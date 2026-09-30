@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Starry Night — Neural Rendering Pipeline</title>
+<meta name="description" content="SAM / MiDaS-depth / RAFT-flow / GLSL neural rendering of Van Gogh's The Starry Night. The painting comes alive in your browser.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="frame">
+    <canvas id="app" aria-label="Animated The Starry Night"></canvas>
+    <div id="loading" aria-live="polite">
+      <div class="loader"></div>
+      <div class="loading-text">Loading the neural scene&hellip;</div>
+      <div class="loading-sub">SAM layers &middot; fused depth &middot; RAFT flow</div>
+    </div>
+    <div id="fallback" hidden>
+      <img id="fallback-img" alt="The Starry Night (static fallback)">
+      <p>WebGL is unavailable on this device — showing the static painting.</p>
+    </div>
+    <div id="error-box" hidden></div>
+    <div id="hud">
+      <span id="hud-title">The Starry Night</span>
+      <span id="hud-sub">neural rendering &middot; 1889 &middot; MoMA</span>
+    </div>
+  </div>
+</div>
+
+<button id="music-btn" class="round-btn" title="Toggle soundtrack (M)" aria-label="Toggle soundtrack">♪</button>
+<div id="sound-hint" hidden>Click anywhere to begin the music</div>
+
+<aside id="panel" class="collapsed" aria-label="Render controls">
+  <button id="panel-toggle" aria-label="Toggle controls">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+  </button>
+  <div class="panel-body">
+    <h2>Neural Renderer</h2>
+
+    <div class="group">
+      <div class="group-title">Motion</div>
+      <label class="row"><span>Parallax</span>
+        <input type="range" id="ctl-parallax" min="0" max="100" value="55">
+      </label>
+      <label class="row"><span>Brush flow (RAFT)</span>
+        <input type="range" id="ctl-flow" min="0" max="200" value="100">
+      </label>
+      <label class="row"><span>Speed</span>
+        <input type="range" id="ctl-speed" min="10" max="200" value="100">
+      </label>
+      <label class="row"><span>Cypress sway</span>
+        <input type="range" id="ctl-sway" min="0" max="200" value="100">
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-title">Light</div>
+      <label class="row"><span>Star twinkle</span>
+        <input type="range" id="ctl-twinkle" min="0" max="200" value="100">
+      </label>
+      <label class="row"><span>Moon glow</span>
+        <input type="range" id="ctl-moon" min="0" max="200" value="100">
+      </label>
+      <label class="row"><span>Window flicker</span>
+        <input type="range" id="ctl-flicker" min="0" max="200" value="100">
+      </label>
+    </div>
+
+    <div class="group">
+      <div class="group-title">Layers</div>
+      <div class="toggles">
+        <label class="chip"><input type="checkbox" id="vis-sky" checked><span>Sky</span></label>
+        <label class="chip"><input type="checkbox" id="vis-stars" checked><span>Stars</span></label>
+        <label class="chip"><input type="checkbox" id="vis-moon" checked><span>Moon</span></label>
+        <label class="chip"><input type="checkbox" id="vis-tree" checked><span>Cypress</span></label>
+        <label class="chip"><input type="checkbox" id="vis-village" checked><span>Village</span></label>
+      </div>
+    </div>
+
+    <div class="group">
+      <div class="group-title">Camera</div>
+      <div class="toggles">
+        <label class="chip"><input type="checkbox" id="ctl-cruise" checked><span>Auto-cruise</span></label>
+        <button class="chip btn" id="ctl-pause">Pause</button>
+        <button class="chip btn" id="ctl-meteor">Shooting star</button>
+        <button class="chip btn" id="ctl-reset">Reset view</button>
+      </div>
+    </div>
+
+    <div class="group stats">
+      <span id="stat-fps">-- fps</span>
+      <span id="stat-res">--</span>
+    </div>
+    <p class="credits">
+      Painting: Vincent van Gogh, 1889 (public domain).<br>
+      Pipeline: SAM &rarr; MiDaS depth &rarr; RAFT flow &rarr; GLSL.
+    </p>
+  </div>
+</aside>
+
+<script src="lib/three.min.js"></script>
+<script src="assets/scene-data.js"></script>
+<script src="assets/shaders.js"></script>
+<script src="js/music.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
